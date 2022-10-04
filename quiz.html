@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz | Fun With Triangle</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <script src="js/quiz.js" defer></script>
+</head>
+
+<body>
+    <nav class="navigation">
+        <div class="nav-brand">Fun With Triangles</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link" href="/">Is Triangle</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">Quiz</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">Hypotenuse</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">Area of Triangle</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1 class="hero-heading">Quiz on <span class="heading-inverted">Triangles</span></h1>
+    </header>
+
+    <form class="form-quiz container-center">
+        <div class="quiz-container">
+            <p>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°? </p>
+            <label>
+                <input type="radio" name="question-1" value="45">
+                45
+            </label>
+
+            <label>
+                <input type="radio" name="question-1" value="60">
+                60
+            </label>
+
+            <label>
+                <input type="radio" name="question-1" value="90">
+                90
+            </label>
+        </div>
+
+        <div class="quiz-container">
+            <p>If a triangle has an angle of 90 degrees, what is it called? </p>
+            <label>
+                <input type="radio" name="question-2" value="obtuse">
+                obtuse
+            </label>
+
+            <label>
+                <input type="radio" name="question-2" value="acute">
+                acute
+            </label>
+
+            <label>
+                <input type="radio" name="question-2" value="right angled">
+                right angled
+            </label>
+        </div>
+
+        <div class="quiz-container">
+            <p>How many sides does a triangle have?</p>
+            <label>
+                <input type="radio" name="question-3" value="5">
+                5
+            </label>
+
+            <label>
+                <input type="radio" name="question-3" value="3">
+                3
+            </label>
+
+            <label>
+                <input type="radio" name="question-3" value="4">
+                4
+            </label>
+        </div>
+
+        <div class="quiz-container">
+            <p>Which of the following triangles are always similar? </p>
+            <label>
+                <input type="radio" name="question-4" value="Equilateral triangle">
+                Equilateral triangle
+            </label>
+
+            <label>
+                <input type="radio" name="question-4" value="Isosceles triangle">
+                Isosceles triangle
+            </label>
+        </div>
+
+        <div class="quiz-container">
+            <p>The perimeter of scalene triangle with sides a, b, c is </p>
+            <label>
+                <input type="radio" name="question-3" value="a + b + c">
+                a + b + c
+            </label>
+
+            <label>
+                <input type="radio" name="question-3" value="2a">
+                2a
+            </label>
+
+            <label>
+                <input type="radio" name="question-3" value="None of these">
+                None of these
+            </label>
+        </div>
+        <button class="btn-primary" type="submit">Submit</button>
+        <h2 class="output">
+
+        </h2>
+    </form>
+</body>
+
+</html>
