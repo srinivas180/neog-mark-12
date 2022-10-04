@@ -1,5 +1,6 @@
 :root {
   --primary-color: #3b82f6;
+  --primary-color-hover: #1962d6;
   --gray: #525252;
   --light-gray: #f9fafb;
 }
@@ -129,6 +130,10 @@ hr {
   background-color: var(--primary-color);
   color: white;
   cursor: pointer;
+}
+
+.btn-check:hover {
+  background-color: var(--primary-color-hover);
 }
 
 .output {
