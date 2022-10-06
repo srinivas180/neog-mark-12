@@ -7,13 +7,19 @@ function calculateArea() {
     var base = baseHTML.value;
     var height = heightHTML.value;
 
-    if(base <= 0 || height <= 0) {
-        output.innerText = "Please enter only positive values which are greater than zero in both fields."
+    if(base == '' || height == '')
+    {
+        output.innerText = "Please enter values in all fields."
     }
     else {
-        var area = 0.5 * base * height;
-
-        output.innerText = "Area of Triangle is " + area;
+        if(base <= 0 || height <= 0) {
+            output.innerText = "Please enter only positive values which are greater than zero in both fields."
+        }
+        else {
+            var area = 0.5 * base * height;
+    
+            output.innerText = "Area of Triangle is " + area;
+        }
     }
 }
 
