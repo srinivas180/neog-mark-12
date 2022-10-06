@@ -11,12 +11,18 @@ function calculateSumOfAngles() {
 }
 
 function isTriangle() {
-    var sumOfAngles = calculateSumOfAngles();
-    if(sumOfAngles == 180) {
-        output.innerText = "Given angles form a triangle";
+    
+    if(angles[0].value === '' || angles[1].value === '' || angles[2].value === '') {
+        output.innerHTML = "Please enter values in all fields";
     }
     else {
-        output.innerText = "Given angles doesn't form a triangle";
+        var sumOfAngles = calculateSumOfAngles();
+        if(sumOfAngles == 180) {
+            output.innerText = "Given angles form a triangle";
+        }
+        else {
+            output.innerText = "Given angles doesn't form a triangle";
+        }
     }
 }
 
